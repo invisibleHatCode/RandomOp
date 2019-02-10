@@ -34,11 +34,14 @@ public class RandomOp {
     }
 
     public double randDouble(double min, double max) {
-        return 0;
+        Random rand = new Random();
+        double randValue = min + (max - min) * rand.nextDouble();
+        return randValue;
     }
 
     public static void main(String[] args) {
-
+        RandomOp rop = new RandomOp();
+        
     }
 
 }
